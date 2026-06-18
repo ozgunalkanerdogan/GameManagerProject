@@ -126,7 +126,7 @@ Her oyun şu bilgileri içeriyor:
 
 ---
 
-## Varsayilan Oyunlar
+## Varsayılan Oyunlar
 
 Proje ilk açıldığında 6 örnek oyun yüklenir:
 
@@ -139,7 +139,7 @@ Proje ilk açıldığında 6 örnek oyun yüklenir:
 
 ---
 
-## Gelistirici
+## Geliştirici
 
 **Özgün Alkan Erdogan** - 2026
 
@@ -148,7 +148,7 @@ Proje ilk açıldığında 6 örnek oyun yüklenir:
 ## Bağlantılar
 
 - **GitHub:** [GitHub Repository](https://github.com/ozgunalkanerdogan/GameManagerProject)
-- **Live Demo:** [Netlify](gamemanagerproject.netlify.app)
+- **Live Demo:** [Netlify](https://gamemanagerproject.netlify.app)
 
 ---
 
