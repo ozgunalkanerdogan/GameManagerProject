@@ -1,181 +1,165 @@
-# Game Manager - ReactJS + Vite Project
+# Game Manager ??
 
-A professional ReactJS application for managing a game collection. This project demonstrates CRUD operations using LocalStorage, React Hooks, and Bootstrap 5 for styling.
+Staj projesi olarak hazirlanan **ReactJS + Vite** ile yapilmis bir oyun yönetim uygulamasi.
 
-## Project Overview
+## Proje Hakkinda
 
-Game Manager is a simple yet effective web application that allows users to:
-- **Add** new games with name, genre, and price
-- **View** all games in an organized table
-- **Update** game information
-- **Delete** games from the collection
+Kullanicilarin kendi oyun koleksiyonlarini yönetebilecekleri basit bir web uygulamasi.
 
-All data is stored locally in the browser's LocalStorage, providing persistent storage across sessions without requiring a backend server.
+**Özellikleri:**
+- ? Oyun ekleme
+- ? Oyunlari listeme
+- ? Oyun bilgilerini güncelleme
+- ? Oyun silme
 
-## Features
-
-- CRUD Operations: Add, Read, Update, Delete games
-- LocalStorage: Data persistence without a backend
-- Responsive Design: Works on desktop and mobile devices
-- Form Validation: Ensures data integrity
-- Confirmation Dialogs: Prevents accidental deletion
-- Simple Navigation: User-friendly interface with two main pages
-- Clean Code: Well-structured and maintainable codebase
-
-## Project Structure
-
-\\\
-src/
-+-- Components/              # Reusable React components
-ï¿½   +-- GameForm.jsx        # Form for adding/editing games
-ï¿½   +-- GameList.jsx        # Table displaying all games
-+-- Pages/                  # Page components
-ï¿½   +-- Home.jsx           # Landing page
-ï¿½   +-- Games.jsx          # Games management page
-+-- services/              # Business logic layer
-ï¿½   +-- GameService.js     # LocalStorage operations
-+-- App.jsx               # Main application component
-+-- App.css               # Global styles
-+-- main.jsx              # Application entry point
-+-- index.css             # Base styles
-\\\
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm (v6 or higher)
-
-### Installation
-
-1. Navigate to the project directory:
-\\\ash
-cd "Javascript Project"
-\\\
-
-2. Install dependencies:
-\\\ash
-npm install
-\\\
-
-### Running the Project
-
-Start the development server:
-\\\ash
-npm run dev
-\\\
-
-The application will be available at \http://localhost:5173\
-
-### Building for Production
-
-Create an optimized production build:
-\\\ash
-npm run build
-\\\
-
-## How to Use
-
-### Home Page
-- Welcome screen with application overview
-- Click "Games" in the navigation to start managing your collection
-
-### Games Page
-**Left Column - Add/Edit Game:**
-- Fill in the game name, genre, and price
-- Click "Add Game" to add a new game
-- To edit an existing game, click the "Edit" button in the games list
-- To cancel editing, click the "Cancel Editing" button
-
-**Right Column - Games List:**
-- View all games in a table format
-- Each row displays: ID, Name, Genre, Price, and action buttons
-- **Edit Button**: Modify game information
-- **Delete Button**: Remove a game from the collection (with confirmation)
-
-## Game Data Structure
-
-Each game contains the following fields:
-- **ID**: Unique identifier (auto-generated)
-- **Name**: Game title
-- **Genre**: Category (e.g., RPG, Action, Adventure, Strategy)
-- **Price**: Cost in USD
-
-### Example Game Object
-\\\javascript
-{
-  id: 1,
-  name: "The Legend of Zelda",
-  genre: "Adventure",
-  price: 59.99
-}
-\\\
-
-## Technologies Used
-
-- **React 18+**: UI library with Hooks
-- **Vite**: Modern development build tool
-- **Bootstrap 5**: CSS framework for styling
-- **LocalStorage API**: Browser data persistence
-
-## Code Highlights
-
-### GameService.js - Core CRUD Operations
-\\\javascript
-getAllGames()           // Retrieve all games
-getGameById(id)         // Get a specific game
-addGame(game)           // Create new game
-updateGame(id, data)    // Update existing game
-deleteGame(id)          // Remove a game
-\\\
-
-### React Hooks Implementation
-- useState: Manage component state (games, form data, editing mode)
-- useEffect: Handle side effects and initialization
-- Event handlers: Form submission and user interactions
-
-## Key Implementation Details
-
-This application implements the following web development concepts:
-1. **Component Composition**: Modular and reusable UI components
-2. **State Management**: Using React Hooks for component state
-3. **Side Effects**: Lifecycle management with useEffect Hook
-4. **Form Handling**: Form validation and data binding
-5. **Data Persistence**: Client-side storage with LocalStorage API
-6. **Navigation**: Page-based navigation system
-7. **Responsive Design**: Bootstrap 5 framework integration
-
-## Limitations
-
-- No backend server required
-- Data stored in browser's LocalStorage only
-- No user authentication
-- Single user environment
-- No advanced features (filtering, sorting, search)
-
-## Future Enhancements
-
-Possible improvements to expand functionality:
-- Add search and filter functionality
-- Sort games by name, genre, or price
-- Export/Import game data (CSV/JSON)
-- Dark mode toggle
-- Add game ratings or reviews
-- Implement React Router for advanced navigation
-- Add automated tests with Jest
-
-## License
-
-This project is open source and available for public use.
-
-## Deployment Information
-
-Ready for deployment on:
-- Netlify
-- Vercel
-- GitHub Pages
-- Any static hosting service
+Veriler browser'in LocalStorage'inda saklaniyor, bu nedenle backend sunucuya ihtiyaç yok.
 
 ---
 
-**Project Status**: Active and maintained.
+## ?? Proje Yapisi
+
+`\
+src/
++-- Components/
+¦   +-- GameForm.jsx       (Oyun ekleme/düzenleme formu)
+¦   +-- GameList.jsx       (Oyun listesi tablosu)
++-- Pages/
+¦   +-- Home.jsx           (Ana sayfa)
+¦   +-- Games.jsx          (Oyun yönetimi sayfasi)
++-- services/
+¦   +-- GameService.js     (CRUD islemleri ve localStorage)
++-- App.jsx
++-- App.css
++-- main.jsx
+`\
+
+---
+
+## ?? Nasil Çalistirilir?
+
+### 1?? Gereksinimler
+- Node.js (v14+)
+- npm
+
+### 2?? Kurulum
+
+`\bash
+# Projeyi aç
+cd "Javascript Project"
+
+# Bagimliliklari yükle
+npm install
+`\
+
+### 3?? Gelistirme Sunucusu
+
+`\bash
+npm run dev
+`\
+
+Uygulamaya http://localhost:5174 adresinden erisebilirsin.
+
+### 4?? Production Build
+
+`\bash
+npm run build
+`\
+
+---
+
+## ?? Nasil Kullanilir?
+
+### Home Sayfasi (Ana Sayfa)
+- Uygulamaya hosgeldin sayfasi
+- "Games" butonuna tiklayarak oyun yönetimi sayfasina geç
+
+### Games Sayfasi
+
+**Sol Taraf - Oyun Ekleme/Düzenleme:**
+- Oyun adi, türü ve fiyatini gir
+- "Add Game" butonuna tikla
+- Mevcut oyunu düzenlemek için listede "Edit" butonuna tikla
+- Düzenlemeyi iptal etmek için "Cancel Editing" butonuna tikla
+
+**Sag Taraf - Oyun Listesi:**
+- Tüm oyunlari tabel formatinda gör
+- Her oyunun ID, Adi, Türü ve Fiyati gösterilir
+- **Edit**: Oyun bilgilerini düzenle
+- **Delete**: Oyunu sil (onay istegi vardir)
+
+---
+
+## ?? Oyun Veri Yapisi
+
+Her oyun su bilgileri içeriyor:
+
+`\javascript
+{
+  id: 1,                    // Oyun kimligi
+  name: "Minecraft",        // Oyun adi
+  genre: "Sandbox",         // Türü
+  price: 26.95              // Fiyati
+}
+`\
+
+---
+
+## ??? Kullanilan Teknolojiler
+
+| Teknoloji | Amaç |
+|-----------|------|
+| **React 18+** | Kullanici arayüzü |
+| **Vite** | Gelistirme ve derleme |
+| **Bootstrap 5** | Stil ve responsive tasarim |
+| **LocalStorage** | Veri saklama |
+
+---
+
+## ?? Proje Içinde Ögrenilen Kavramlar
+
+1. **React Hooks** - useState, useEffect kullanimi
+2. **Bilesen Tasarimi** - Component'leri nasil bölmeli
+3. **Form Islemleri** - Form validation ve veri baglama
+4. **CRUD Islemleri** - Veri ekleme, okuma, güncelleme, silme
+5. **LocalStorage** - Browser'da veri saklama
+6. **Bootstrap** - Responsive tasarim yapma
+
+---
+
+## ?? Varsayilan Oyunlar
+
+Proje ilk açildiginda 6 örnek oyun yüklenir:
+
+1. The Legend of Zelda: Breath of the Wild
+2. Elden Ring
+3. Minecraft
+4. Fortnite
+5. Cyberpunk 2077
+6. Stardew Valley
+
+---
+
+## ?? Gelecek Iyilestirmeler
+
+- Oyunlari arama ve filtreleme
+- Oyunlari ada/türe/fiyata göre siralama
+- Veriyi CSV/JSON olarak disa aktarma
+- Dark mode özelligi
+- Oyun yorumlari ve puanlamasi
+
+---
+
+## ?? Gelistirici
+
+**Özgün Alkan Erdogan** - 2026
+
+---
+
+## ?? Baglantilar
+
+- **GitHub:** [GitHub Repository](https://github.com/)
+- **Live Demo:** [Netlify](https://netlify.com)
+
+---
+
+**Staj Projesi - Yapim Tarihi: Haziran 2026**
