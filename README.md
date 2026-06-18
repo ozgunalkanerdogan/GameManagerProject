@@ -1,33 +1,33 @@
-# Game Manager ??
+# Game Manager
 
-Staj projesi olarak hazirlanan **ReactJS + Vite** ile yapilmis bir oyun y�netim uygulamasi.
+Staj projesi olarak hazırlanan **ReactJS + Vite** ile yapılmış bir oyun yönetim uygulaması.
 
-## Proje Hakkinda
+## Proje Hakkında
 
-Kullanicilarin kendi oyun koleksiyonlarini y�netebilecekleri basit bir web uygulamasi.
+Kullanıcıların kendi oyun kolesyionlarını yönetebilecekleri basit bir web uygulaması.
 
-**�zellikleri:**
-- ? Oyun ekleme
-- ? Oyunlari listeme
-- ? Oyun bilgilerini g�ncelleme
-- ? Oyun silme
+**Özellikleri:**
+-  Oyun ekleme
+-  Oyunları listeme
+-  Oyun bilgilerini güncelleme
+-  Oyun silme
 
-Veriler browser'in LocalStorage'inda saklaniyor, bu nedenle backend sunucuya ihtiya� yok.
+Veriler browser'ın LocalStorage'ında saklanıyor, bu nedenle backend sunucuya ihtiyaç yok.
 
 ---
 
-## ?? Proje Yapisi
+## Proje Yapisi
 
 `\
 src/
 +-- Components/
-�   +-- GameForm.jsx       (Oyun ekleme/d�zenleme formu)
-�   +-- GameList.jsx       (Oyun listesi tablosu)
+¦   +-- GameForm.jsx       (Oyun ekleme/düzenleme formu)
+¦   +-- GameList.jsx       (Oyun listesi tablosu)
 +-- Pages/
-�   +-- Home.jsx           (Ana sayfa)
-�   +-- Games.jsx          (Oyun y�netimi sayfasi)
+¦   +-- Home.jsx           (Ana sayfa)
+¦   +-- Games.jsx          (Oyun yönetimi sayfasi)
 +-- services/
-�   +-- GameService.js     (CRUD islemleri ve localStorage)
+¦   +-- GameService.js     (CRUD islemleri ve localStorage)
 +-- App.jsx
 +-- App.css
 +-- main.jsx
@@ -35,31 +35,31 @@ src/
 
 ---
 
-## ?? Nasil �alistirilir?
+## Nasıl Çalıştırılır?
 
-### 1?? Gereksinimler
+### 1- Gereksinimler
 - Node.js (v14+)
 - npm
 
-### 2?? Kurulum
+### 2- Kurulum
 
 `\bash
-# Projeyi a�
+# Projeyi aç
 cd "Javascript Project"
 
-# Bagimliliklari y�kle
+# Bağımlılıklarını yükle
 npm install
 `\
 
-### 3?? Gelistirme Sunucusu
+### 3- Geliştirme Sunucusu
 
 `\bash
 npm run dev
 `\
 
-Uygulamaya http://localhost:5174 adresinden erisebilirsin.
+Uygulamaya http://localhost:5173 adresinden erişebilirsin.
 
-### 4?? Production Build
+### 4- Production Build
 
 `\bash
 npm run build
@@ -67,68 +67,68 @@ npm run build
 
 ---
 
-## ?? Nasil Kullanilir?
+##  Nasıl Kullanılır?
 
-### Home Sayfasi (Ana Sayfa)
-- Uygulamaya hosgeldin sayfasi
-- "Games" butonuna tiklayarak oyun y�netimi sayfasina ge�
+### Home Sayfası
+- Uygulamaya hoşgeldin sayfası
+- "Games" butonuna tıklayarak oyun yönetimi sayfasına geç
 
-### Games Sayfasi
+### Games Sayfası
 
-**Sol Taraf - Oyun Ekleme/D�zenleme:**
-- Oyun adi, t�r� ve fiyatini gir
-- "Add Game" butonuna tikla
-- Mevcut oyunu d�zenlemek i�in listede "Edit" butonuna tikla
-- D�zenlemeyi iptal etmek i�in "Cancel Editing" butonuna tikla
+**Sol Taraf - Oyun Ekleme/Düzenleme:**
+- Oyun adı, türü ve fiyatını gir
+- "Add Game" butonuna tıkla
+- Mevcut oyunu düzenlemek için listede "Edit" butonuna tıkla
+- Düzenlemeyi iptal etmek için "Cancel Editing" butonuna tıkla
 
-**Sag Taraf - Oyun Listesi:**
-- T�m oyunlari tabel formatinda g�r
-- Her oyunun ID, Adi, T�r� ve Fiyati g�sterilir
-- **Edit**: Oyun bilgilerini d�zenle
-- **Delete**: Oyunu sil (onay istegi vardir)
+**Sağ Taraf - Oyun Listesi:**
+- Tüm oyunları tabel formatinda gör
+- Her oyunun ID, Adı, Türü ve Fiyatı gösterilir
+- **Edit**: Oyun bilgilerini düzenle
+- **Delete**: Oyunu sil (onay isteği vardır)
 
 ---
 
-## ?? Oyun Veri Yapisi
+## Oyun Veri Yapisi
 
-Her oyun su bilgileri i�eriyor:
+Her oyun şu bilgileri içeriyor:
 
 `\javascript
 {
   id: 1,                    // Oyun kimligi
   name: "Minecraft",        // Oyun adi
-  genre: "Sandbox",         // T�r�
+  genre: "Sandbox",         // Türü
   price: 26.95              // Fiyati
 }
 `\
 
 ---
 
-## ??? Kullanilan Teknolojiler
+## Kullanılan Teknolojiler
 
-| Teknoloji | Ama� |
+| Teknoloji | Amaç |
 |-----------|------|
-| **React 18+** | Kullanici aray�z� |
-| **Vite** | Gelistirme ve derleme |
-| **Bootstrap 5** | Stil ve responsive tasarim |
+| **React 18+** | Kullanıcı arayüzü |
+| **Vite** | Geliştirme ve derleme |
+| **Bootstrap 5** | Stil ve responsive tasarım |
 | **LocalStorage** | Veri saklama |
 
 ---
 
-## ?? Proje I�inde �grenilen Kavramlar
+## Proje Içinde Ögrenilen Kavramlar
 
-1. **React Hooks** - useState, useEffect kullanimi
-2. **Bilesen Tasarimi** - Component'leri nasil b�lmeli
+1. **React Hooks** - useState, useEffect kullanımı
+2. **Bilesen Tasarimi** - Component'leri nasıl bölmeli
 3. **Form Islemleri** - Form validation ve veri baglama
-4. **CRUD Islemleri** - Veri ekleme, okuma, g�ncelleme, silme
+4. **CRUD Islemleri** - Veri ekleme, okuma, güncelleme, silme
 5. **LocalStorage** - Browser'da veri saklama
-6. **Bootstrap** - Responsive tasarim yapma
+6. **Bootstrap** - Responsive tasarım yapma
 
 ---
 
-## ?? Varsayilan Oyunlar
+## Varsayilan Oyunlar
 
-Proje ilk a�ildiginda 6 �rnek oyun y�klenir:
+Proje ilk açıldığında 6 örnek oyun yüklenir:
 
 1. The Legend of Zelda: Breath of the Wild
 2. Elden Ring
@@ -139,27 +139,17 @@ Proje ilk a�ildiginda 6 �rnek oyun y�klenir:
 
 ---
 
-## ?? Gelecek Iyilestirmeler
+## Gelistirici
 
-- Oyunlari arama ve filtreleme
-- Oyunlari ada/t�re/fiyata g�re siralama
-- Veriyi CSV/JSON olarak disa aktarma
-- Dark mode �zelligi
-- Oyun yorumlari ve puanlamasi
+**Özgün Alkan Erdogan** - 2026
 
 ---
 
-## ?? Gelistirici
+## Bağlantılar
 
-**�zg�n Alkan Erdogan** - 2026
-
----
-
-## ?? Baglantilar
-
-- **GitHub:** [GitHub Repository](https://github.com/)
+- **GitHub:** [GitHub Repository](https://github.com/ozgunalkanerdogan/GameManagerProject)
 - **Live Demo:** [Netlify](https://netlify.com)
 
 ---
 
-**Staj Projesi - Yapim Tarihi: Haziran 2026**
+**Staj Projesi - Yapım Tarihi: Haziran 2026**
