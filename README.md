@@ -148,7 +148,7 @@ Proje ilk açıldığında 6 örnek oyun yüklenir:
 ## Bağlantılar
 
 - **GitHub:** [GitHub Repository](https://github.com/ozgunalkanerdogan/GameManagerProject)
-- **Live Demo:** [Netlify](https://netlify.com)
+- **Live Demo:** [Netlify](gamemanagerproject.netlify.app)
 
 ---
 
